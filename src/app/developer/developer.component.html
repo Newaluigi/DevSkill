@@ -1,0 +1,13 @@
+<div class="card-container">
+    <h3>Developer</h3>
+    <p>Last Name: {{ developer.lastName }}</p>
+    <p>First Name: {{ developer.firstName }}</p>
+    <p>Age: {{ developer.age }}</p>
+    <p>Gender: {{ developer.gender }}</p>
+    <p>Bio: {{ developer.bio }}</p>
+    <hr>
+    <h6>Skills:</h6>
+    <ul>
+        <app-skill *ngFor="let skill of developer.skills" [skill]="skill"></app-skill>
+    </ul>
+</div>
